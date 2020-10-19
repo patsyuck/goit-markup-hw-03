@@ -12,6 +12,11 @@ ul {
     padding-inline-start: 0px;
 }
 
+img {
+    display: block;
+    /* max-width: 100%; */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -182,7 +187,8 @@ footer, .section-main {
     font-size: 18px;
     color: #212121;
     line-height: 36px;
-    margin: 20px 24px 4px;
+    /* margin: 20px 24px 4px; */
+    margin-bottom: 4px;
 }
 
 .header-section {
@@ -207,19 +213,28 @@ footer, .section-main {
     color: #212121;
     line-height: 19px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    /* padding-top: 30px;
+    padding-bottom: 10px; */
+    margin-bottom: 10px;
 }
 
 .desc-name {
     line-height: 19px;
     text-align: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+}
+
+.name {
+    padding: 30px 0px;
 }
 
 .desc-project {
     color: #757575;
-    margin: 0px 24px 20px;
+    /* margin: 0px 24px 20px; */
+}
+
+.project {
+    padding: 20px 24px;
 }
 
 .studio, .portfolio {
