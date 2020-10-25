@@ -8,9 +8,9 @@ p, h1, h2, h3, ul {
     margin-block-end: 0px;
 }
 
-html {
+/* html {
     overflow-x: hidden;
-}
+} */
 
 img {
     display: block;
@@ -230,6 +230,8 @@ header .logo {
 }
 
 .navigation {
+    display: flex;
+    align-items: center;
     margin-right: auto;
 }
 
@@ -256,21 +258,28 @@ header .logo {
 .features, .images, .container-name {
     display: flex;
     flex-direction: row;
-    margin-left: -30px;
+    /*margin-left: -30px;*/
 }
 
 .block-feature {
+    /*margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);*/
+    width: 270px;
+}
+
+.block-feature:not(:first-child), .image:not(:first-child),
+.block-name:not(:first-child) {
     margin-left: 30px;
-    flex-basis: calc(100% / 4 - 30px);
 }
 
 .pictures-section {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .image {
-    margin-left: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    /*margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);*/
+    width: 370px;
 }
 
 .names-section {
@@ -280,8 +289,9 @@ header .logo {
 }
 
 .block-name {
-    margin-left: 30px;
-    flex-basis: calc(100% / 4 - 30px);
+    /*margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);*/
+    width: 270px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -313,12 +323,21 @@ footer address {
 .desc {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    /*margin-left: -30px;
+    margin-top: -30px;*/
 }
 
 .desc-portfolio {
-    margin-left: 30px;
+    /*margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);*/
+    width: 370px;
+}
+
+.desc-portfolio:nth-child(n+4) {
+    margin-top: 30px;
+}
+
+.desc-portfolio:not(:nth-child(3n+1)) {
+    margin-left: 30px;
 }
